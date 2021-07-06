@@ -12,16 +12,56 @@
   <style>
     body {
       background-color: rgb(10, 12, 27);
-      color: white;
     }
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      background-color: rgb(28, 25, 26);
+      background-color: #1c1938;
       width: 80%;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 230px;
+      margin-bottom: 230px;
+      border-radius: 1%;
+    }
+    .paragraph {
+      width: 400px;
+      margin: auto;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .item-image {
+      border-radius: 1%;
+      filter: brightness(0.6);
+    }
+    .item-main-line {
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .item-mainletter-highlight {
+      color: blueviolet;
+    }
+    .item-sub-line {
+      align-self: center;
+      font-size: 11px;
+      font-weight: lighter;
+      color: #8f8da5;
+    }
+    .item-bottom-line {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item-bottom-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: white;
+    }
+    .item-bottom-letters {
+      color: #8f8da5;
+      font-weight: lighter;
+      font-size: 10px;
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -29,16 +69,25 @@
 </head>
 <body>
   <div class="container">
-    <div class="item">
-      Get insights that help your business grow.
-      Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-      experience, and overall efficiency.
-      10k+ companies
-      314 templates
-      12m+ queries
+    <div class="item paragraph">
+      <div class="item-main-line">Get <span class="item-mainletter-highlight">insights</span> that help your business grow.</div>
+      <div class="item-sub-line">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+      </div>
+      <div class="item-bottom-line">
+        <div class="item-bottom-title">10k+
+          <div class="item-bottom-letters">companies</div>
+        </div>
+        <div class="item-bottom-title">314
+          <div class="item-bottom-letters">templates</div>
+        </div>
+        <div class="item-bottom-title">12m+
+          <div class="item-bottom-letters">queries</div>
+        </div>
+      </div>
     </div>
     <div class="item">
-      <img src='./images/image-header-desktop.jpg' alt="" />
+      <img src='./images/image-header-desktop.jpg' alt="" class="item-image" />
     </div>
   </div>
   <div class="attribution">
